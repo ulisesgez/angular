@@ -1,1 +1,19 @@
 <p>Soy el Home!</p>
+<br>
+<p>Uso de la interpolación:</p>
+<br>
+<p>
+    Nombre: {{ name }},
+    Apellido: {{ lastName }},
+    Edad: {{ age }}
+</p>
+<br>
+<p>Tambien podemos acceder a variables que en este caso estan asociadas a nuestros elementos html:</p>
+<br>
+<p>Uso de Template Reference:</p>
+<br>
+<div (keyup)="0">
+    <label>Repetidor:</label>
+    <input type="text" #repeater>
+    <p>{{ repeater.value }}</p>
+</div>
